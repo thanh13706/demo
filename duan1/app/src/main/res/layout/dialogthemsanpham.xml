@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/around_dialog"
+    app:cardCornerRadius="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgThemSanPhamPB"
+
+                android:layout_margin="24dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/sanpham6" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/imgThemSanPhamPB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:textSize="22dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:text="TextView" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        app:srcCompat="@drawable/ic__favorite" />
+
+                    <TextView
+                        android:id="@+id/tvYeuThich"
+                        android:layout_toRightOf="@id/imageView2"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="17dp"
+                        android:text="Yêu thích" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:background="#E3D1D1"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F7F5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGioiThieuMon"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:text="Giới thiệu món" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:background="#E3D1D1"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvabc"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:text="abc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:background="#E3D1D1"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTru"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/botron_button"
+                android:textSize="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/tvThemSoLuong"
+                android:layout_toRightOf="@+id/btnTru"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:layout_marginLeft="28dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btnCong"
+                android:layout_toRightOf="@+id/tvThemSoLuong"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/botron_button"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btnThemSoLuong"
+                android:layout_width="120dp"
+                android:background="@drawable/botron_button"
+                android:backgroundTint="@color/background"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:textSize="14dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:text="6.000 đ" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
